@@ -27,7 +27,7 @@ export class PhraseDetailsComponent implements OnInit {
   }
 
   gotoPhrasesList(): void {
-    this.rooter.navigate(['/phrases', {id: this.phrase?.id}]).then()
+    this.rooter.navigate(['../', {id: this.phrase?.id}], {relativeTo: this.activatedRoute}).then()
   }
 
   }
